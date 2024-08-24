@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List BootStrap</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles/styles.css">
+  </head>
+  <body>
+</head>
+<body>
+    <header class="p-3">
+        <h1>Lista de Tareas con BootStrap</h1>
+    </header>
+
+    <section id="contenedorAgregarTarea">
+        <div>
+            <h6>Escribe las tareas por agregar:</h6>
+        </div>
+        <div class="row">
+            <div class="col">
+                <input id="nuevaTarea" class="form-control" type="text" placeholder="Ingresa la tarea por realizar">
+            </div>
+            <div class="col">
+                <button onclick="agregarTarea()" class="btn btn-info" >Agregar Tarea</button>
+            </div>            
+        </div>
+    </section>
+    
+    <section class="contenedorTareas">
+        <div class="row">
+            <article class="tareasAgregadas col" id="tareasAgregadas">
+                <h6>Tareas por hacer:</h6>
+                <ul id="listaTareasAgregadas">
+
+                </ul>
+            </article>
+            <article class="tareasRealizadas col" id="tareasRealizadas">
+                <h6>Tareas realizadas:</h6>
+                <ul id="listaTareasRealizadas">
+
+                </ul>
+            </article>
+        </div>
+    </section>
+    <footer>
+        <h3>Practica DOM de Melvin González</h3>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>

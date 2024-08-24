@@ -1,0 +1,55 @@
+body {
+  background-color: azure;
+}
+
+header,
+footer {
+  text-align: center;
+}
+
+#contenedorAgregarTarea {
+  display: flex;
+  flex-direction: column; /* Establecemos la dirección principal como columna */
+  align-items: center;
+}
+
+#contenedorAgregarTarea > div:nth-child(2) {
+  display: flex;
+  justify-content: center; /* Centramos horizontalmente el segundo div y sus hijos */
+}
+
+.form-control {
+    width: 400px;
+}
+
+.contenedorTareas {
+    padding: 30px;
+}
+
+.tareasAgregadas {
+    background-color: aqua;
+    padding: 20px;
+}
+
+.tareasRealizadas {
+    background-color: rgb(0, 255, 106);
+    padding: 20px;
+}
+
+.tarea{
+  padding-bottom: 10px;
+}
+
+.btn-realizada {
+  background-color: rgba(0, 128, 0, 0.667);
+  color: white;
+  margin-right: 10px;
+  /* Otros estilos que quieras aplicar */
+}
+
+.btn-eliminar {
+  background-color: rgba(255, 0, 0, 0.69);
+  color: white;
+  margin-right: 10px;
+  /* Otros estilos que quieras aplicar */
+}
